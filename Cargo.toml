@@ -1,0 +1,15 @@
+[package]
+name = "share_wgpu_between_bevy_and_burn"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/janhohenheim/share_wgpu_between_bevy_and_burn"
+edition = "2024"
+
+[dependencies.bevy]
+version = "0.16.0-rc.2"
+
+[dependencies.burn]
+version = "0.17.0"
+git = "https://github.com/tracel-ai/burn"
+rev = "975db6a4c133836d27dbfe0123ed7ffab37233bb"
+features = ["wgpu"]
