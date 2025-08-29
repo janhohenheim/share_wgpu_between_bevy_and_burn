@@ -1768,6 +1768,7 @@ checksum = "46c5e41b57b8bba42a04676d81cb89e9ee8e859a1a66f80a5a72e1cb76b34d43"
 [[package]]
 name = "burn"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "burn-autodiff",
  "burn-candle",
@@ -1786,6 +1787,7 @@ dependencies = [
 [[package]]
 name = "burn-autodiff"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "burn-common",
  "burn-tensor",
@@ -1800,6 +1802,7 @@ dependencies = [
 [[package]]
 name = "burn-candle"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "burn-common",
  "burn-tensor",
@@ -1811,6 +1814,7 @@ dependencies = [
 [[package]]
 name = "burn-collective"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "burn-common",
  "burn-communication",
@@ -1827,6 +1831,7 @@ dependencies = [
 [[package]]
 name = "burn-common"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "cubecl-common",
  "rayon",
@@ -1836,6 +1841,7 @@ dependencies = [
 [[package]]
 name = "burn-communication"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "axum",
  "burn-common",
@@ -1858,6 +1864,7 @@ dependencies = [
 [[package]]
 name = "burn-core"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "ahash",
  "bincode",
@@ -1884,6 +1891,7 @@ dependencies = [
 [[package]]
 name = "burn-cubecl"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "burn-common",
  "burn-cubecl-fusion",
@@ -1908,6 +1916,7 @@ dependencies = [
 [[package]]
 name = "burn-cubecl-fusion"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "burn-common",
  "burn-fusion",
@@ -1923,6 +1932,7 @@ dependencies = [
 [[package]]
 name = "burn-cuda"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "burn-cubecl",
  "burn-fusion",
@@ -1937,6 +1947,7 @@ dependencies = [
 [[package]]
 name = "burn-dataset"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "csv",
  "derive-new",
@@ -1960,6 +1971,7 @@ dependencies = [
 [[package]]
 name = "burn-derive"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "derive-new",
  "proc-macro2",
@@ -1970,6 +1982,7 @@ dependencies = [
 [[package]]
 name = "burn-fusion"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "burn-common",
  "burn-ir",
@@ -1985,6 +1998,7 @@ dependencies = [
 [[package]]
 name = "burn-ir"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "burn-tensor",
  "hashbrown 0.15.5",
@@ -1995,6 +2009,7 @@ dependencies = [
 [[package]]
 name = "burn-ndarray"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "atomic_float",
  "burn-autodiff",
@@ -2019,6 +2034,7 @@ dependencies = [
 [[package]]
 name = "burn-remote"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "async-channel",
  "axum",
@@ -2044,6 +2060,7 @@ dependencies = [
 [[package]]
 name = "burn-rocm"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "burn-cubecl",
  "burn-fusion",
@@ -2058,6 +2075,7 @@ dependencies = [
 [[package]]
 name = "burn-router"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "burn-common",
  "burn-ir",
@@ -2070,6 +2088,7 @@ dependencies = [
 [[package]]
 name = "burn-tch"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "burn-tensor",
  "cc",
@@ -2083,6 +2102,7 @@ dependencies = [
 [[package]]
 name = "burn-tensor"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "burn-common",
  "bytemuck",
@@ -2102,6 +2122,7 @@ dependencies = [
 [[package]]
 name = "burn-train"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "async-channel",
  "burn-core",
@@ -2122,6 +2143,7 @@ dependencies = [
 [[package]]
 name = "burn-wgpu"
 version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
 dependencies = [
  "burn-cubecl",
  "burn-fusion",
