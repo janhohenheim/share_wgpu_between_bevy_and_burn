@@ -3,6 +3,7 @@ name = "share_wgpu_between_bevy_and_burn"
 version = "0.1.0"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/janhohenheim/share_wgpu_between_bevy_and_burn"
+description = "A minimal example of how to share a common wgpu device between the Bevy game engine and the Burn machine learning framework"
 edition = "2024"
 
 [dependencies]
@@ -11,5 +12,5 @@ bevy = "0.17.0-dev"
 burn = { version = "0.19.0", features = ["wgpu"] }
 
 [patch.crates-io]
-bevy = { git = "https://github.com/bevyengine/bevy", branch = "main" }
+bevy = { git = "https://github.com/bevyengine/bevy" }
 burn = { git = "https://github.com/janhohenheim/burn", branch = "wgpu-26" }

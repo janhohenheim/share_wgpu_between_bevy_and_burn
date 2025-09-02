@@ -78,6 +78,6 @@ fn test_burn(burn_device: Res<BurnDevice>) {
 }
 
 fn some_burn_function<B: Backend>(device: B::Device) {
-    let tensor = Tensor::<B, 2>::zeros(Shape::new([2, 3]), &device);
+    let tensor = Tensor::<B, 2>::ones(Shape::new([2, 3]), &device);
     info!("{tensor}");
 }
