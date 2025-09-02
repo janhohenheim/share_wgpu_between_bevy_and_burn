@@ -1768,12 +1768,13 @@ checksum = "46c5e41b57b8bba42a04676d81cb89e9ee8e859a1a66f80a5a72e1cb76b34d43"
 [[package]]
 name = "burn"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "burn-autodiff",
  "burn-candle",
  "burn-collective",
  "burn-core",
+ "burn-cpu",
  "burn-cuda",
  "burn-ndarray",
  "burn-remote",
@@ -1787,7 +1788,7 @@ dependencies = [
 [[package]]
 name = "burn-autodiff"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "burn-common",
  "burn-tensor",
@@ -1802,7 +1803,7 @@ dependencies = [
 [[package]]
 name = "burn-candle"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "burn-common",
  "burn-tensor",
@@ -1814,7 +1815,7 @@ dependencies = [
 [[package]]
 name = "burn-collective"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "burn-common",
  "burn-communication",
@@ -1831,7 +1832,7 @@ dependencies = [
 [[package]]
 name = "burn-common"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "cubecl-common",
  "rayon",
@@ -1841,7 +1842,7 @@ dependencies = [
 [[package]]
 name = "burn-communication"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "axum",
  "burn-common",
@@ -1864,7 +1865,7 @@ dependencies = [
 [[package]]
 name = "burn-core"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "ahash",
  "bincode",
@@ -1889,9 +1890,24 @@ dependencies = [
 ]
 
 [[package]]
+name = "burn-cpu"
+version = "0.19.0"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
+dependencies = [
+ "burn-cubecl",
+ "burn-fusion",
+ "burn-tensor",
+ "bytemuck",
+ "cubecl",
+ "derive-new",
+ "half",
+ "log",
+]
+
+[[package]]
 name = "burn-cubecl"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "burn-common",
  "burn-cubecl-fusion",
@@ -1916,7 +1932,7 @@ dependencies = [
 [[package]]
 name = "burn-cubecl-fusion"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "burn-common",
  "burn-fusion",
@@ -1932,7 +1948,7 @@ dependencies = [
 [[package]]
 name = "burn-cuda"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "burn-cubecl",
  "burn-fusion",
@@ -1947,7 +1963,7 @@ dependencies = [
 [[package]]
 name = "burn-dataset"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "csv",
  "derive-new",
@@ -1971,7 +1987,7 @@ dependencies = [
 [[package]]
 name = "burn-derive"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "derive-new",
  "proc-macro2",
@@ -1982,7 +1998,7 @@ dependencies = [
 [[package]]
 name = "burn-fusion"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "burn-common",
  "burn-ir",
@@ -1998,7 +2014,7 @@ dependencies = [
 [[package]]
 name = "burn-ir"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "burn-tensor",
  "hashbrown 0.15.5",
@@ -2009,7 +2025,7 @@ dependencies = [
 [[package]]
 name = "burn-ndarray"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "atomic_float",
  "burn-autodiff",
@@ -2034,7 +2050,7 @@ dependencies = [
 [[package]]
 name = "burn-remote"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "async-channel",
  "axum",
@@ -2060,7 +2076,7 @@ dependencies = [
 [[package]]
 name = "burn-rocm"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "burn-cubecl",
  "burn-fusion",
@@ -2075,7 +2091,7 @@ dependencies = [
 [[package]]
 name = "burn-router"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "burn-common",
  "burn-ir",
@@ -2088,7 +2104,7 @@ dependencies = [
 [[package]]
 name = "burn-tch"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "burn-tensor",
  "cc",
@@ -2102,7 +2118,7 @@ dependencies = [
 [[package]]
 name = "burn-tensor"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "burn-common",
  "bytemuck",
@@ -2122,7 +2138,7 @@ dependencies = [
 [[package]]
 name = "burn-train"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "async-channel",
  "burn-core",
@@ -2143,7 +2159,7 @@ dependencies = [
 [[package]]
 name = "burn-wgpu"
 version = "0.19.0"
-source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#c68e8ec500b626bebde8aa1056669f132aca8664"
+source = "git+https://github.com/janhohenheim/burn?branch=wgpu-26#e571835b070c51975fe5f9ea4857f0c6c5b2a83e"
 dependencies = [
  "burn-cubecl",
  "burn-fusion",
@@ -2761,7 +2777,7 @@ dependencies = [
 [[package]]
 name = "cubecl"
 version = "0.7.0"
-source = "git+https://github.com/janhohenheim/cubecl?branch=wgpu-26#3b9c2af9fcda9b8be9e3fbb1b317e9d032aaf374"
+source = "git+https://github.com/tracel-ai/cubecl?rev=e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8#e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8"
 dependencies = [
  "cubecl-convolution",
  "cubecl-core",
@@ -2780,7 +2796,7 @@ dependencies = [
 [[package]]
 name = "cubecl-common"
 version = "0.7.0"
-source = "git+https://github.com/janhohenheim/cubecl?branch=wgpu-26#3b9c2af9fcda9b8be9e3fbb1b317e9d032aaf374"
+source = "git+https://github.com/tracel-ai/cubecl?rev=e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8#e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8"
 dependencies = [
  "bytemuck",
  "cfg-if",
@@ -2809,7 +2825,7 @@ dependencies = [
 [[package]]
 name = "cubecl-convolution"
 version = "0.7.0"
-source = "git+https://github.com/janhohenheim/cubecl?branch=wgpu-26#3b9c2af9fcda9b8be9e3fbb1b317e9d032aaf374"
+source = "git+https://github.com/tracel-ai/cubecl?rev=e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8#e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8"
 dependencies = [
  "bytemuck",
  "cubecl-common",
@@ -2827,7 +2843,7 @@ dependencies = [
 [[package]]
 name = "cubecl-core"
 version = "0.7.0"
-source = "git+https://github.com/janhohenheim/cubecl?branch=wgpu-26#3b9c2af9fcda9b8be9e3fbb1b317e9d032aaf374"
+source = "git+https://github.com/tracel-ai/cubecl?rev=e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8#e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8"
 dependencies = [
  "bitflags 2.9.4",
  "bytemuck",
@@ -2850,7 +2866,7 @@ dependencies = [
 [[package]]
 name = "cubecl-cpp"
 version = "0.7.0"
-source = "git+https://github.com/janhohenheim/cubecl?branch=wgpu-26#3b9c2af9fcda9b8be9e3fbb1b317e9d032aaf374"
+source = "git+https://github.com/tracel-ai/cubecl?rev=e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8#e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8"
 dependencies = [
  "bytemuck",
  "cubecl-common",
@@ -2864,7 +2880,7 @@ dependencies = [
 [[package]]
 name = "cubecl-cpu"
 version = "0.7.0"
-source = "git+https://github.com/janhohenheim/cubecl?branch=wgpu-26#3b9c2af9fcda9b8be9e3fbb1b317e9d032aaf374"
+source = "git+https://github.com/tracel-ai/cubecl?rev=e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8#e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8"
 dependencies = [
  "bytemuck",
  "cubecl-common",
@@ -2886,7 +2902,7 @@ dependencies = [
 [[package]]
 name = "cubecl-cuda"
 version = "0.7.0"
-source = "git+https://github.com/janhohenheim/cubecl?branch=wgpu-26#3b9c2af9fcda9b8be9e3fbb1b317e9d032aaf374"
+source = "git+https://github.com/tracel-ai/cubecl?rev=e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8#e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8"
 dependencies = [
  "bytemuck",
  "cubecl-common",
@@ -2903,7 +2919,7 @@ dependencies = [
 [[package]]
 name = "cubecl-hip"
 version = "0.7.0"
-source = "git+https://github.com/janhohenheim/cubecl?branch=wgpu-26#3b9c2af9fcda9b8be9e3fbb1b317e9d032aaf374"
+source = "git+https://github.com/tracel-ai/cubecl?rev=e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8#e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8"
 dependencies = [
  "bytemuck",
  "cubecl-common",
@@ -2931,7 +2947,7 @@ dependencies = [
 [[package]]
 name = "cubecl-ir"
 version = "0.7.0"
-source = "git+https://github.com/janhohenheim/cubecl?branch=wgpu-26#3b9c2af9fcda9b8be9e3fbb1b317e9d032aaf374"
+source = "git+https://github.com/tracel-ai/cubecl?rev=e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8#e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8"
 dependencies = [
  "cubecl-common",
  "cubecl-macros-internal",
@@ -2950,7 +2966,7 @@ dependencies = [
 [[package]]
 name = "cubecl-macros"
 version = "0.7.0"
-source = "git+https://github.com/janhohenheim/cubecl?branch=wgpu-26#3b9c2af9fcda9b8be9e3fbb1b317e9d032aaf374"
+source = "git+https://github.com/tracel-ai/cubecl?rev=e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8#e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8"
 dependencies = [
  "cubecl-common",
  "darling 0.21.3",
@@ -2965,7 +2981,7 @@ dependencies = [
 [[package]]
 name = "cubecl-macros-internal"
 version = "0.7.0"
-source = "git+https://github.com/janhohenheim/cubecl?branch=wgpu-26#3b9c2af9fcda9b8be9e3fbb1b317e9d032aaf374"
+source = "git+https://github.com/tracel-ai/cubecl?rev=e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8#e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8"
 dependencies = [
  "darling 0.21.3",
  "proc-macro2",
@@ -2976,7 +2992,7 @@ dependencies = [
 [[package]]
 name = "cubecl-matmul"
 version = "0.7.0"
-source = "git+https://github.com/janhohenheim/cubecl?branch=wgpu-26#3b9c2af9fcda9b8be9e3fbb1b317e9d032aaf374"
+source = "git+https://github.com/tracel-ai/cubecl?rev=e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8#e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8"
 dependencies = [
  "bytemuck",
  "cubecl-common",
@@ -2993,7 +3009,7 @@ dependencies = [
 [[package]]
 name = "cubecl-opt"
 version = "0.7.0"
-source = "git+https://github.com/janhohenheim/cubecl?branch=wgpu-26#3b9c2af9fcda9b8be9e3fbb1b317e9d032aaf374"
+source = "git+https://github.com/tracel-ai/cubecl?rev=e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8#e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8"
 dependencies = [
  "cubecl-common",
  "cubecl-core",
@@ -3010,7 +3026,7 @@ dependencies = [
 [[package]]
 name = "cubecl-quant"
 version = "0.7.0"
-source = "git+https://github.com/janhohenheim/cubecl?branch=wgpu-26#3b9c2af9fcda9b8be9e3fbb1b317e9d032aaf374"
+source = "git+https://github.com/tracel-ai/cubecl?rev=e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8#e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8"
 dependencies = [
  "cubecl-core",
  "cubecl-runtime",
@@ -3022,7 +3038,7 @@ dependencies = [
 [[package]]
 name = "cubecl-random"
 version = "0.7.0"
-source = "git+https://github.com/janhohenheim/cubecl?branch=wgpu-26#3b9c2af9fcda9b8be9e3fbb1b317e9d032aaf374"
+source = "git+https://github.com/tracel-ai/cubecl?rev=e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8#e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8"
 dependencies = [
  "cubecl-common",
  "cubecl-core",
@@ -3037,7 +3053,7 @@ dependencies = [
 [[package]]
 name = "cubecl-reduce"
 version = "0.7.0"
-source = "git+https://github.com/janhohenheim/cubecl?branch=wgpu-26#3b9c2af9fcda9b8be9e3fbb1b317e9d032aaf374"
+source = "git+https://github.com/tracel-ai/cubecl?rev=e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8#e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8"
 dependencies = [
  "cubecl-core",
  "cubecl-runtime",
@@ -3052,7 +3068,7 @@ dependencies = [
 [[package]]
 name = "cubecl-runtime"
 version = "0.7.0"
-source = "git+https://github.com/janhohenheim/cubecl?branch=wgpu-26#3b9c2af9fcda9b8be9e3fbb1b317e9d032aaf374"
+source = "git+https://github.com/tracel-ai/cubecl?rev=e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8#e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8"
 dependencies = [
  "async-channel",
  "bytemuck",
@@ -3078,7 +3094,7 @@ dependencies = [
 [[package]]
 name = "cubecl-std"
 version = "0.7.0"
-source = "git+https://github.com/janhohenheim/cubecl?branch=wgpu-26#3b9c2af9fcda9b8be9e3fbb1b317e9d032aaf374"
+source = "git+https://github.com/tracel-ai/cubecl?rev=e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8#e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8"
 dependencies = [
  "cubecl-core",
  "cubecl-runtime",
@@ -3089,7 +3105,7 @@ dependencies = [
 [[package]]
 name = "cubecl-wgpu"
 version = "0.7.0"
-source = "git+https://github.com/janhohenheim/cubecl?branch=wgpu-26#3b9c2af9fcda9b8be9e3fbb1b317e9d032aaf374"
+source = "git+https://github.com/tracel-ai/cubecl?rev=e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8#e770e3ee6bcf9d55ffe0753ca926193e0e0fdcc8"
 dependencies = [
  "async-channel",
  "bytemuck",
@@ -7998,9 +8014,9 @@ dependencies = [
 
 [[package]]
 name = "time"
-version = "0.3.42"
+version = "0.3.43"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8ca967379f9d8eb8058d86ed467d81d03e81acd45757e4ca341c24affbe8e8e3"
+checksum = "83bde6f1ec10e72d583d91623c939f623002284ef622b87de38cfd546cbf2031"
 dependencies = [
  "deranged",
  "libc",
@@ -8014,15 +8030,15 @@ dependencies = [
 
 [[package]]
 name = "time-core"
-version = "0.1.5"
+version = "0.1.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a9108bb380861b07264b950ded55a44a14a4adc68b9f5efd85aafc3aa4d40a68"
+checksum = "40868e7c1d2f0b8d73e4a8c7f0ff63af4f6d19be117e90bd73eb1d62cf831c6b"
 
 [[package]]
 name = "time-macros"
-version = "0.2.23"
+version = "0.2.24"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7182799245a7264ce590b349d90338f1c1affad93d2639aed5f8f69c090b334c"
+checksum = "30cfb0125f12d9c277f35663a0a33f8c30190f4e4574868a330595412d34ebf3"
 dependencies = [
  "num-conv",
  "time-core",
