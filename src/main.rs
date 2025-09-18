@@ -2,9 +2,9 @@ use bevy::{
     prelude::*,
     render::{
         RenderApp,
-        WgpuWrapper,
         renderer::{
             RenderAdapter, RenderAdapterInfo, RenderDevice, RenderInstance, RenderQueue,
+            WgpuWrapper,
         },
     },
 };
